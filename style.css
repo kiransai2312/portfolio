@@ -44,14 +44,14 @@ header {
 
 .hero {
   background: url('images/background.jpg') center center/cover no-repeat;
-  min-height: 80vh; /* Reduced height for a cleaner look */
+  min-height: 70vh; /* Reduced height for a cleaner look */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero img {
-  max-height: 500px; /* Ensure background doesn't overpower content */
+  max-height: 300px; /* Ensure background doesn't overpower content */
   object-fit: cover;
 }
 
