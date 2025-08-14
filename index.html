@@ -1,125 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kiran Bandaru - DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kiran Bandaru - DevOps Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="container hero-content">
-    <div class="hero-image">
-      <img src="images/profile.jpg" alt="Kiran Bandaru" />
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <a href="#home" class="nav-logo">Kiran Bandaru</a>
+        <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero" style="background-image: url('images/background.jpg');">
+    <div class="hero-content" data-aos="fade-up">
+        <img src="images/profile.jpg" alt="Kiran Bandaru" class="profile-pic">
+        <h1>Kiran Bandaru</h1>
+        <h3>DevOps Engineer</h3>
+        <p>Dublin, Ireland | <a href="mailto:kiransai2312@gmail.com">kiransai2312@gmail.com</a> | +353 838 130 850</p>
+        <p class="subtitle">
+            Passionate about automating infrastructure, building CI/CD pipelines, and deploying cloud-native applications.
+        </p>
     </div>
-    <div class="hero-text">
-      <h1>Kiran Bandaru</h1>
-      <h3>DevOps Engineer</h3>
-      <p>Dublin, Ireland | kiransai2312@gmail.com | +353 838 130 850</p>
-      <p class="subtitle">
-        Passionate about automating infrastructure, building CI/CD pipelines, and deploying cloud-native applications.
-      </p>
-    </div>
-  </div>
 </section>
 
-<!-- PROFILE -->
-<section class="section">
-  <div class="container">
-    <h2>Profile</h2>
-    <p>
-      DevOps Engineer with 3.5 years of experience at Cognizant (India), specializing in CI/CD pipelines, cloud infrastructure (AWS), containerization (Docker, Kubernetes), and automation tools like Jenkins, Git, and Ansible. Currently pursuing a Master’s in Computing Science at Griffith College Dublin. Seeking internship opportunities to contribute to impactful projects and deepen DevOps/cloud expertise.
+<!-- Profile -->
+<section id="profile" class="section">
+    <h2 data-aos="fade-right">Profile</h2>
+    <p data-aos="fade-up">
+       DevOps Engineer with 3.5 years of hands-on experience building, automating, and securing software delivery pipelines for large-scale enterprise systems. Skilled in designing and managing CI/CD workflows, deploying and maintaining cloud infrastructure on AWS and Azure, and leveraging container technologies like Docker and Kubernetes. Experienced in using Infrastructure as Code tools such as Terraform and Ansible to create scalable, reliable environments. Passionate about improving system performance, reducing downtime, and streamlining operations through smart automation and proactive monitoring. Currently advancing my expertise with a Master’s in Computing Science at Griffith College Dublin, combining strong technical foundations with a drive for continuous growth. Known for collaborating seamlessly across teams to deliver high-quality, resilient solutions that meet real-world business needs.
     </p>
-  </div>
 </section>
 
-<!-- SKILLS -->
-<section class="section skills">
-  <div class="container">
-    <h2>Technical Skills</h2>
-   <div class="grid-3">
-  <div><strong>Version Control:</strong> Git, GitLab, GitHub, Bitbucket</div>
-  <div><strong>CI/CD:</strong> GitLab CI/CD, Jenkins, GitHub Actions, Azure DevOps Pipelines</div>
-  <div><strong>Infrastructure as Code (IaC):</strong> Terraform, Ansible</div>
-  <div><strong>Containerization & Orchestration:</strong> Docker, Kubernetes, Helm</div>
-  <div><strong>Cloud Platforms:</strong> AWS, Azure, GCP</div>
-  <div><strong>Scripting & Automation:</strong> Bash, Python, YAML</div>
-  <div><strong>Monitoring & Logging:</strong> Prometheus, Grafana, CloudWatch</div>
-  <div><strong>Configuration Management:</strong> Ansible, Puppet, Chef</div>
-</div>
-
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section experience">
-  <div class="container">
-    <h2>Professional Experience</h2>
-
-    <div class="job">
-      <h3>Programmer Analyst – Cognizant (Client: LexisNexis)</h3>
-      <p><em>Mar 2023 – Jan 2025 | India</em></p>
-      <ul>
-        <li>Built and maintained CI/CD pipelines with Jenkins and GitLab CI.</li>
-        <li>Managed AWS infrastructure (EC2, S3, Lambda), improving availability and scalability.</li>
-        <li>Deployed containers using Docker and Kubernetes.</li>
-        <li>Automated infrastructure using Ansible and Terraform.</li>
-        <li>Created Bash and Python scripts for task automation.</li>
-        <li>Set up monitoring with Prometheus and Grafana.</li>
-      </ul>
+<!-- Skills -->
+<section id="skills" class="section">
+    <h2 data-aos="fade-right">Technical Skills</h2>
+    <div class="skills-grid" data-aos="fade-up">
+        <div class="skill-card"><i class="fab fa-git-alt"></i> Git, GitLab, GitHub, Bitbucket</div>
+        <div class="skill-card"><i class="fas fa-code-branch"></i> GitLab CI/CD, Jenkins, GitHub Actions, Azure Pipelines</div>
+        <div class="skill-card"><i class="fas fa-code"></i> Terraform, Ansible</div>
+        <div class="skill-card"><i class="fab fa-docker"></i> Docker, Kubernetes, Helm</div>
+        <div class="skill-card"><i class="fab fa-aws"></i> AWS, Azure, GCP</div>
+        <div class="skill-card"><i class="fas fa-terminal"></i> Bash, Python, YAML</div>
+        <div class="skill-card"><i class="fas fa-chart-line"></i> Prometheus, Grafana, CloudWatch</div>
+        <div class="skill-card"><i class="fas fa-cogs"></i> Ansible, Puppet, Chef</div>
     </div>
-
-    <div class="job">
-      <h3>Programmer Analyst Trainee – Cognizant (Client: Comcast)</h3>
-      <p><em>Nov 2021 – Mar 2023 | India</em></p>
-      <ul>
-        <li>Designed CI/CD workflows using Azure DevOps.</li>
-        <li>Used ARM templates, Bicep, and Terraform for Infrastructure as Code.</li>
-        <li>Managed and scaled applications on AKS (Azure Kubernetes Service).</li>
-        <li>Collaborated across Dev, QA, and Security teams to ensure smooth deployments.</li>
-      </ul>
-    </div>
-  </div>
 </section>
 
-<!-- EDUCATION -->
-<section class="section education">
-  <div class="container">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Master of Computing Science</strong> – Griffith College, Dublin (2025–Present)</li>
-      <li><strong>B.Tech in Computer Science</strong> – SRKR Engineering College, India (2018–2021)</li>
+<!-- Experience -->
+<section id="experience" class="section">
+    <h2 data-aos="fade-right">Professional Experience</h2>
+    <div class="cards" data-aos="fade-up">
+        <div class="card">
+            <h3>Programmer Analyst – Cognizant (Client: LexisNexis)</h3>
+            <p><em>Mar 2023 – Jan 2025 | India</em></p>
+            <ul>
+    <li>Managed and optimized AWS cloud infrastructure to ensure high availability and scalability for the Lexis Plus application.</li>
+    <li>Maintained and enhanced CI/CD pipelines using GitHub Actions for automated, reliable deployments.</li>
+    <li>Implemented monitoring and alerting using Datadog to improve system performance and incident response.</li>
+    <li>Automated infrastructure provisioning using Terraform and scripting in Python and Bash.</li>
+    <li>Collaborated with development teams to streamline deployment processes and enable self-service environments.</li>
+</ul>
+
+            
+        </div>
+        <div class="card">
+            <h3>Programmer Analyst Trainee – Cognizant (Client: Comcast)</h3>
+            <p><em>Nov 2021 – Mar 2023 | India</em></p>
+          <ul>
+  
+              
+    <li>Designed and maintained Kubernetes platforms on AWS ECS, ensuring high availability, scalability, and cost efficiency.</li>
+    <li>Managed and improved CI/CD pipelines using GitHub Actions, automating deployments with Terraform and scripting in Python and Bash.</li>
+    <li>Implemented observability solutions with Datadog for monitoring, logging, and incident response.</li>
+    <li>Supported and optimized AWS cloud infrastructure (compute, database, networking, and security) in compliance with ISO27001 and PCI-DSS standards.</li>
+    <li>Collaborated with development teams to enable self-service deployments and streamline release processes.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section">
+    <h2 data-aos="fade-right">Education</h2>
+    <ul data-aos="fade-up">
+        <li><strong>Master of Computing Science</strong> – Griffith College, Dublin (2025–Present)</li>
+        <li><strong>B.Tech in Computer Science</strong> – SRKR Engineering College, India (2018–2021)</li>
     </ul>
-  </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section class="section certifications">
-  <div class="container">
-    <h2>Certifications</h2>
-    <div class="badge-container">
-      <span>AWS Certified DevOps Engineer</span>
-      <span>AWS Certified Cloud Practitioner</span>
+<!-- Certifications -->
+<section id="certifications" class="section">
+    <h2 data-aos="fade-right">Certifications</h2>
+    <div class="skills-grid" data-aos="fade-up">
+        <div class="skill-card"><i class="fab fa-aws"></i> AWS Certified DevOps Engineer</div>
+        <div class="skill-card"><i class="fab fa-aws"></i> AWS Certified Cloud Practitioner</div>
     </div>
-  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kiransai2312@gmail.com">kiransai2312@gmail.com</a></p>
+<!-- Contact -->
+<section id="contact" class="section">
+    <h2 data-aos="fade-right">Contact</h2>
+    <p>Email: <a href="https://mail.google.com/mail/?view=cm&to=kiransai2312@gmail.com" target="_blank">kiransai2312@gmail.com</a></p>
     <p>Phone: <a href="tel:+353838130850">+353 838 130 850</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/kiranbandaru</a></p>
-    <p>GitHub: <a href="#">github.com/kiranbandaru</a></p>
-  </div>
+ <p>LinkedIn: <a href="https://linkedin.com/in/kiranbandaru" target="_blank">linkedin.com/in/kiranbandaru</a></p>
+<p>GitHub: <a href="https://github.com/kiranbandaru" target="_blank">github.com/kiranbandaru</a></p>
 </section>
 
 <footer>
-  <p>&copy; 2025 Kiran Bandaru. All rights reserved.</p>
+    <p>&copy; 2025 Kiran Bandaru. All rights reserved.</p>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
